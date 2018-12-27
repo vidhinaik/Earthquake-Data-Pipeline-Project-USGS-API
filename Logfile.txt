@@ -1,0 +1,48 @@
+Successfully connected to C:\Sqlite\QuizDatabase.db database.
+Create table string:  CREATE TABLE IF NOT EXISTS EarthquakeData01 (
+                                            Event_id text PRIMARY KEY,
+                                            Date text,
+                                            Magnitude real,
+                                            Details text
+                                        ); 
+Successfully created the table.
+Error in values: Omitted row number -2429
+Successfully inserted January data.
+Error in values: Omitted row number -926
+Error in values: Omitted row number -2310
+Error in values: Omitted row number -2459
+Successfully inserted February data.
+Successfully inserted March data.
+Error in values: Omitted row number -4334
+Successfully inserted April data.
+Successfully inserted May data.
+Error in values: Omitted row number -1767
+Error in values: Omitted row number -2228
+Error in values: Omitted row number -3033
+Successfully inserted June data.
+Error in values: Omitted row number -944
+Error in values: Omitted row number -11051
+Successfully inserted July data.
+Error in values: Omitted row number -8582
+Successfully inserted August data.
+Error in values: Omitted row number -6419
+Error in values: Omitted row number -8720
+Successfully inserted September data.
+Error in values: Omitted row number -1657
+Error in values: Omitted row number -3086
+Error in values: Omitted row number -3534
+Error in values: Omitted row number -3886
+Error in values: Omitted row number -5065
+Error in values: Omitted row number -7205
+Error in values: Omitted row number -7207
+Successfully inserted October data.
+Error in values: Omitted row number -49
+Error in values: Omitted row number -1528
+Error in values: Omitted row number -1827
+Successfully inserted November data.
+Error in values: Omitted row number -3429
+Successfully inserted December data.
+Query: select Event_id, Date, Magnitude, Details from EarthquakeData01 where Magnitude in (select max(Magnitude) from EarthquakeData01);
+Successfully executed the query.The biggest earthquake in 2017 occurred at 101km SSW of Tres Picos, Mexico on 2017-09-08 04:49:19 with a magnitude of 8.2. The decimal degrees longitude is -93.8993, decimal degrees latitude is 15.0222 and depth is 47.39 km. The method used to calculate the preferred magnitude for the event was mww.
+Successfully added the category column.
+Exported data for visualization.
